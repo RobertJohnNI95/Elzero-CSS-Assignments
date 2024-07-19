@@ -1,0 +1,13 @@
+div {
+    max-width: 400px;
+    background-color: #a52a2a;
+    color: white;
+    margin: 10px;
+    padding: 20px;
+    width: fit-content;
+}
+
+.last {
+    max-height: 25px;
+    overflow-y: hidden;
+}

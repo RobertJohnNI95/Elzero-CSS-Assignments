@@ -1,0 +1,11 @@
+a {
+    text-transform: capitalize;
+    margin: 40%;
+    background-color: #009688;
+    padding: 15px;
+    width: 500px;
+    border-bottom: 5px solid #00514A;
+    text-decoration: none;
+    color: white;
+    vertical-align: middle;
+}
