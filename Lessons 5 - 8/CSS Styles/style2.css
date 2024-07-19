@@ -1,0 +1,35 @@
+.assign-2-shape-1 {
+    height: 400px;
+    width: 400px;
+    background-image: url("css-assignment-5-8.png");
+    background-repeat: no-repeat;
+    color: white;
+    background-color: #EEE;
+}
+
+.assign-2-shape-2 {
+    height: 400px;
+    width: 400px;
+    background-image: url("css-assignment-5-8.png");
+    background-repeat: repeat-y;
+    color: white;
+    background-color: #EEE;
+}
+
+.assign-2-shape-3 {
+    height: 400px;
+    width: 400px;
+    background-image: url("css-assignment-5-8.png");
+    background-repeat: repeat-x;
+    color: white;
+    background-color: #EEE;
+}
+
+.assign-2-shape-4 {
+    height: 400px;
+    width: 400px;
+    background-image: url("css-assignment-5-8.png");
+    background-repeat: repeat;
+    color: white;
+    background-color: #EEE;
+}
