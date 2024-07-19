@@ -1,0 +1,111 @@
+/* CHALLENGE */
+:root {
+    --main-txtcolor1: black;
+    --main-txtcolor2: white;
+    --main-bgcolor1: white;
+    --main-bgcolor2: black;
+    --main-graytxt: #C5C5C0;
+}
+
+.board {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #EEE;
+    padding: 20px;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "omohamed omohamed asayed snabil"
+        "mibrahim mmohamed mmohamed snabil"
+        "mibrahim eeldin eeldin snabil"
+        "msayed isayed gsayed esayed";
+}
+
+.board div {
+    padding: 0 10px;
+    border-bottom: 3px solid #FA6739;
+    background-color: var(--main-bgcolor1);
+    color: var(--main-txtcolor1);
+    position: relative;
+}
+
+.s-nabil,
+.m-mohamed,
+.i-sayed {
+    background-color: var(--main-bgcolor2) !important;
+}
+
+.s-nabil h4, .s-nabil p,
+.m-mohamed h4, .m-mohamed p,
+.i-sayed h4, .i-sayed p {
+    color: var(--main-txtcolor2) !important;
+}
+
+.board div::after {
+    content: "\"";
+    color: var(--main-graytxt);
+    position: absolute;
+    bottom: -20px;
+    right: 10px;
+    font-size: 50px;
+    transform: rotate(15deg);
+    /* font-style: italic; */
+}
+
+h4,
+.upper,
+.lower {
+    color: var(--main-txtcolor1);
+}
+
+h5 {
+    margin: -10px 0 10px 0;
+    padding: none;
+    color: var(--main-graytxt);
+}
+
+.upper {
+    font-weight: bold;
+}
+
+.o-mohamed {
+    grid-area: omohamed;
+}
+
+.a-sayed {
+    grid-area: asayed;
+}
+
+.s-nabil {
+    grid-area: snabil;
+}
+
+.m-ibrahim {
+    grid-area: mibrahim;
+}
+
+.m-mohamed {
+    grid-area: mmohamed;
+}
+
+.e-eldin {
+    grid-area: eeldin;
+}
+
+.m-sayed {
+    grid-area: msayed;
+}
+
+.i-sayed {
+    grid-area: isayed;
+}
+
+.g-sayed {
+    grid-area: gsayed;
+}
+
+.e-sayed {
+    grid-area: esayed;
+}

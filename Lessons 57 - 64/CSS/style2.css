@@ -1,0 +1,48 @@
+.layout {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    display: grid;
+    grid-template-columns: 75% auto;
+    grid-template-rows: 50px 300px 50px;
+    grid-template-areas: "head head" "sec side" "foot foot";
+}
+
+header {
+    background-color: #03A9F4;
+    grid-area: head;
+    padding: 15px;
+}
+
+header::after {
+    content: "Header";
+}
+
+section {
+    background-color: #FF5722;
+    grid-area: sec;
+    padding: 15px;
+}
+
+section::after {
+    content: "Section";
+}
+
+aside {
+    background-color: #607D8B;
+    grid-area: side;
+    padding: 15px;
+}
+
+aside::after {
+    content: "Aside";
+}
+
+footer {
+    background-color: #009688;
+    grid-area: foot;
+    padding: 15px;
+}
+
+footer::after {
+    content: "Footer";
+}
