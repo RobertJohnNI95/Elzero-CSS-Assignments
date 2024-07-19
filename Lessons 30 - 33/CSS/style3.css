@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+    width: 400px;
+    margin: auto;
+}
+
+.major {
+    background-color: #EEE;
+    list-style-type: none;
+    margin: 20px 0px;
+    padding: 10px;
+}
+
+.major li {
+    background-color: white;
+    margin: 5px;
+    padding: 10px;
+}
+
+.major ul {
+    list-style-position: inside;
+    padding-left: 0px;
+}
+
+.major ol {
+    padding-left: 30px;
+}
