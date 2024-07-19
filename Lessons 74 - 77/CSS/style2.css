@@ -1,0 +1,68 @@
+body {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.blue {   
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 5px solid #1F90F1;
+    border-bottom-color: transparent;
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+    z-index: 2;
+    margin: 100px auto;
+    position: absolute;
+}
+
+.blue:hover,
+.blue:hover + .yellow,
+.blue:hover + .yellow + .black {
+    animation-play-state: running;
+}
+
+.yellow {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: 5px solid #FC9F07;
+    border-bottom-color: transparent;
+    animation-name: spin;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+    z-index: 1;
+    margin: 92.5px auto;
+    position: absolute;
+}
+
+.black {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 5px solid #000000;
+    border-bottom-color: transparent;
+    animation-name: spin;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+    z-index: 0;
+    margin: 85px auto;
+    position: absolute;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

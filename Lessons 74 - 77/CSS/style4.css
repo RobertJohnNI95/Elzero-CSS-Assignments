@@ -1,0 +1,119 @@
+* {
+    text-align: center;
+}
+
+.parent {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.letter-e {
+    display: grid;
+    grid-template-columns: repeat(4, 15px);
+    grid-template-rows: repeat(7, 15px);
+    margin: 0 2.5px;
+    position: relative;
+}
+
+.letter-e .square {
+    background-color: #FEA604;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 3.5px;
+    right: 3.5px;
+    animation-name: e-animation;
+    animation-timing-function: linear;
+    animation-delay: 2.5s;
+    animation-duration: 4s;
+}
+
+@keyframes e-animation {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    10% {
+        transform: translateX(-45px) translateY(0);
+    }
+    20% {
+        transform: translateX(-45px) translateY(45px);
+    }
+    30% {
+        transform: translateX(0) translateY(45px);
+    }
+    40% {
+        transform: translateX(-45px) translateY(45px);
+    }
+    50% {
+        transform: translateX(-45px) translateY(90px);
+    }
+    60% {
+        transform: translateX(0) translateY(90px);
+    }
+    70% {
+        transform: translateX(-45px) translateY(90px);
+    }
+    80% {
+        transform: translateX(-45px) translateY(0);
+    }
+    90% {
+        transform: translateX(0) translateY(0);
+    }
+}
+
+.letter-l .square {
+    background-color: #FEA604;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    bottom: 3.5px;
+    right: 3.5px;
+    animation-name: l-animation;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    background-color: transparent;
+}
+
+@keyframes l-animation {
+    0% {
+        transform: translateX(0) translateY(0);
+        background-color: #FEA604;
+    }
+    30% {
+        transform: translateX(-45px);
+        background-color: #FEA604;
+    }
+    60% {
+        transform: translateX(-45px) translateY(-90px);
+        background-color: #FEA604;
+    }
+    90% {
+        transform: translateX(-45px) translateY(-90px);
+        background-color: transparent;
+    }
+}
+
+.letter-l {
+    display: grid;
+    grid-template-columns: repeat(4, 15px);
+    grid-template-rows: repeat(7, 15px);
+    margin: 0 2.5px;
+    position: relative;
+}
+
+.ink {
+    background-color: #323234;
+    width: 100%;
+    height: 100%;
+}
+
+.gap {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+}
+
+p {
+    margin: auto;
+}

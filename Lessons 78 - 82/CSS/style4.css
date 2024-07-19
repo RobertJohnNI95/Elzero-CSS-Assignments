@@ -1,0 +1,8 @@
+div[title]:not(div[class] div, .no-need) {
+    color: red;
+    font-weight: bold;
+}
+
+* {
+    margin: 0;
+}

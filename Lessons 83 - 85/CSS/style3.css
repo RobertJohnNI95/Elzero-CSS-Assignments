@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+}
+
+div {
+    background-color: #EEE;
+    text-align: center;
+}
+
+.upper {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.lower {
+    margin-top: 5px;
+    color: black;
+    font-size: smaller;
+}
+
+.one {
+    grid-area: one;
+}
+
+.two {
+    grid-area: two;
+}
+
+.three {
+    grid-area: three;
+}
+
+.four {
+    grid-area: four;
+}
+
+@media (min-width: 100px) and (max-width: 431px) {
+    body {
+        grid-template-columns: 96%;
+        grid-template-rows: repeat(4, fit-content);
+        grid-template-areas: "one" "two" "three" "four";
+    }
+    .upper {
+        color: black;
+    }
+}
+
+@media (min-width: 431px) and (max-width: 771px) {
+    body {
+        grid-template-columns: repeat(3, 30%);
+        grid-template-rows: repeat(2, fit-content);
+        grid-template-areas: "one one one" "two three four";
+    }
+    .upper {
+        color: red;
+    }
+}
+
+@media (min-width: 771px) {
+    body {
+        grid-template-columns: repeat(2, 47%);
+        grid-template-rows: repeat(3, fit-content);
+        grid-template-areas: "one one" "two three" "four four";
+    }
+    .upper {
+        color: #149E91;
+    }
+}

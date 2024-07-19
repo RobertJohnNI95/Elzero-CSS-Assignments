@@ -1,0 +1,8 @@
+div:nth-child(2) div[title="Elzero"] {
+    color: red;
+    font-weight: bold;
+}
+
+* {
+    margin: 0;
+}

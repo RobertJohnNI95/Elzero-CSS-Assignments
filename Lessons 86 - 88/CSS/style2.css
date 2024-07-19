@@ -1,0 +1,44 @@
+div {
+    background-color: #DDD;
+    padding: 30px;
+    color: black;
+    position: relative;
+    margin: 45px 20px;
+}
+
+.arrow::after {
+    content: '';
+    width: 0;
+    height: 0;
+    background-color: transparent;
+    border: 20px solid transparent;
+    position: absolute;
+}
+
+.arrow.top::after {
+    border-bottom-color: #DDD;
+    top: -39px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.arrow.right::after {
+    border-left-color: #DDD;
+    top: 50%;
+    right: -39px;
+    transform: translateY(-50%);
+}
+
+.arrow.bottom::after {
+    border-top-color: #DDD;
+    bottom: -39px;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.arrow.left::after {
+    border-right-color: #DDD;
+    bottom: 50%;
+    left: -39px;
+    transform: translateY(50%);
+}

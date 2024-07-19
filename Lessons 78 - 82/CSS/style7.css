@@ -1,0 +1,10 @@
+div:first-of-type div:nth-of-type(2) {
+    color: red;
+    font-weight: bold;
+}
+
+* {
+    margin: 0;
+    font-weight: normal;
+    font-size: 20px;
+}

@@ -1,0 +1,11 @@
+:not(h3, div div:first-child, div:last-child) {
+    color: red;
+    font-weight: bold;
+}
+
+* {
+    margin: 0;
+    font-weight: normal;
+    font-size: 20px;
+    color: black; /* ??? */
+}

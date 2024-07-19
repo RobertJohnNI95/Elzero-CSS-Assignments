@@ -1,0 +1,4 @@
+.child:nth-of-type(2) {
+    color: red;
+    font-weight: bold;
+}
