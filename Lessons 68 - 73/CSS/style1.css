@@ -1,0 +1,38 @@
+:root {
+    --main-bgcolor: #FF5722;
+    --main-txtcolor: white;
+    --main-measure: 95%; /* Nearly */
+}
+
+h1 {
+    width: 150px;
+    margin: 100px auto;
+    background-color: var(--main-bgcolor);
+    color: var(--main-txtcolor);
+    font-weight: bold;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+h1:before {
+    content: "";
+    background-color: var(--main-bgcolor);
+    position: absolute;
+    width: var(--main-measure);
+    height: var(--main-measure);
+    transform: skewX(15deg) skewY(15deg);
+    z-index: -1;
+}
+
+h1:after {
+    content: "";
+    background-color: var(--main-bgcolor);
+    position: absolute;
+    width: var(--main-measure);
+    height: var(--main-measure);
+    transform: skewX(-15deg) skewY(-15deg);
+    z-index: -1;
+}

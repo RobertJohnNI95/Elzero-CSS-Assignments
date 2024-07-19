@@ -1,0 +1,30 @@
+div {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 190px;
+    height: 190px;
+    padding: 10px;;
+    background-color: #607D8B;
+    margin: 150px auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    border-bottom: 5px solid black;
+    position: relative;
+}
+
+div::before {
+    content: "";
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    border: 5px solid white;
+    position: absolute;
+    top: -40%;
+    left: 12.5%;
+    transform: rotate(45deg);
+}
+
+div::after {
+    content: "Elzero";
+    color: white;
+}

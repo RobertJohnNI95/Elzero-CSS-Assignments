@@ -1,0 +1,39 @@
+:root {
+    --main-bgcolor: #009688;
+}
+
+h1 {
+    background-color: var(--main-bgcolor);
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    margin: 50px auto;
+    padding: 30px 0;
+    width: 200px;
+    text-align: center;
+    position: relative;
+}
+
+h1:before {
+    content: "";
+    background-color: var(--main-bgcolor);
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: -20px;
+    transform: skewX(15deg);
+    z-index: -1;
+}
+
+h1:after {
+    content: "";
+    background-color: var(--main-bgcolor);
+    height: 100%;
+    width: 15%;
+    position: absolute;
+    top: 0;
+    left: -60px;
+    transform: skewX(15deg);
+    z-index: -1;
+}
